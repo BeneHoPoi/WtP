@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WtP / Impressum</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="impressum.css" </head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("Navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <!-- <h1>Impressum & Datenschutz</h1> -->
+    <div class="impressum">
+        <h3>Impressum</h3>
+        <p><b>Sebastian Reckert</b><br>
+            c/o Trägerwerk der KjG München und Freising e.V.<br>
+            Preysingstraße 93<br>
+            81667 München<br><br>
+
+            <b>Registergericht München:</b> VR 205747<br>
+            <b>Vom Finanzamt München als gemeinnützig anerkannt</b><br>
+            <b>Steuernummer:</b> 143/223/01155<br>
+            Vorstand des KjR München und Freising:<br>
+            Franziska Bruggmoser, Daniela Kistler, Florian Schneider, Sebastian Reckert, Andreas Spöttl<br>
+            V.i.S.d.P.: Lilly Rottler, ÖR & PR<br>
+            <br>
+            lilly.rottler@paradiso25.de<br>
+            www.paradiso25.de<br></p>
+        <h3>Datenschutz</h3>
+        <p>
+            Datenschutz
+            Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten möglich. Soweit auf
+            unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden,
+            erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche
+            Zustimmung nicht an Dritte weitergegeben.
+            <br><br>
+            Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail)
+            Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht
+            möglich.
+            Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten durch Dritte zur Übersendung
+            von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdrücklich
+            widersprochen. Die Betreiber der Seiten behalten sich ausdrücklich rechtliche Schritte im Falle der
+            unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
+            <br> <br>
+            Quelle: eRecht24.de - Internetrecht von Rechtsanwalt Sören Siebert</p>
+    </div>
+</body>
+
+</html>

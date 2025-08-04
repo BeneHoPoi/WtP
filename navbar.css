@@ -1,0 +1,84 @@
+body {
+    background-color: black;
+}
+
+li {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .burgermenu {
+        display: block;
+    }
+
+    .bignavbar {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (min-width: 600px) {
+    .burgermenu {
+        display: none;
+    }
+
+    .bignavbar {
+        display: block;
+    }
+
+    .bignavbar {
+        color: white;
+        position: fixed;
+        margin: 2vw;
+        display: grid;
+        grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+        align-items: center;
+        text-align: center;
+        z-index: 100;
+        transition: color 0.2s ease;
+        top:0;
+    }
+
+    .bignavbar a {
+        color: white;
+    }
+
+    .bignavbar a:hover {
+        color: #00DEF6;
+    }
+
+    .navlogo {
+        width: 50%;
+    }
+}
+
+.burgericon {
+    position: fixed;
+    z-index: 100;
+    margin: 23px;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1em;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.menu.active {
+    display: flex;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0.5em 0;
+}

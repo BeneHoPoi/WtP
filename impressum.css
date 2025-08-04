@@ -1,0 +1,13 @@
+.impressum {
+    margin: 10vw;
+    align-content: center;
+    line-height: 140%;
+}
+
+h3 {
+    font-family: 'Fractul', sans-serif;
+    font-size: 26pt;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    line-height: 120%;
+}

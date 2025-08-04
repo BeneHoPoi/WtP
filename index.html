@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WELCOME TO PARADISE 2025</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="navbar-placeholder"></div>
+  <script>
+    fetch("Navbar.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+      });
+  </script>
+  <div class="index-mobile-1">
+    <!-- <div class="background-gradient-2">
+
+    </div>
+    <div class="rectangle-20-8"></div> -->
+
+    <img class="hintergrund" src="images/images/verlauf_hintergrund_wtp.png" />
+    <div class="hero">
+      <!-- Burger Menu -->
+      <div class="herocontent">
+
+        <img class="logo" src="images/images/Logo-WtP-weiss.png" alt="Logo von WELCOME-TO-PARADISE" />
+        <div class="ticketlink1">
+          <a href="https://pretix.eu/paradise/welcome/" target="_blank" rel="noopener noreferrer"> <b>Jetzt Tickets sichern!</b></a>
+        </div>
+      </div>
+      <svg class="pfeil" id="scrollArrow" width="42" height="23" viewBox="0 0 42 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L21 21L41 1" stroke="white" stroke-width="2" />
+      </svg>
+
+    </div>
+
+    <!-- <div class="infosunten"> -->
+    <div class="wannwobox" id="section2">
+      <!-- Was-Box -->
+      <div class="wasbox">
+        <h2 class="was">Was ist "WELCOME TO PARADISE"</h2>
+        <p class="beschreibung">Es wird Zeit den Krisen und dunklen Tagen unserer Gegenwart
+          etwas
+          entgegenzusetzen. Lasst uns an den Ort zurückkehren, an dem alles im Guten begann: <b>das Paradies.</b> <br>
+          Es ist nach
+          wie vor unter uns und wir nehmen Sie mit dorthin, in Ihr <b>individuell angepasstes Paradies, ohne Sorgen,
+            ohne
+            Kummer, bis in alle Ewigkeit.</b> Trauen Sie sich und bleiben Sie neugierig, was wir für Sie bereithalten.
+          Es
+          erwartet Sie eine aufregende Reise durch die verschiedensten Gärten der Herrlichkeit. Am Ende entscheiden
+          Sie
+          selbst, welches individuelle Paradies Sie gemeinsam mit Ihren Liebsten betreten wollen. Oder ruft doch die
+          Einsamkeit nach Ihnen? Wir lassen keine Bedürfnisse unerfüllt. Geben Sie sich der Versuchung hin, es wird
+          nur
+          zu Ihrem Besten sein, wenn es endlich auch für Sie heißt: <b> WELCOME TO PARADISE</b>
+        </p>
+      </div>
+
+      <!-- Wann-Box -->
+      <div class="wannbox">
+        <h2>WANN</h2>
+        <div class="termine">
+          <p>Donnerstag</p>
+          <p class="datum">02.10.2025</p>
+          <p>Freitag</p>
+          <p class="datum">03.10.2025</p>
+          <p>Samstag</p>
+          <p class="datum">04.10.2025</p>
+          <p>Freitag</p>
+          <p class="datum">10.10.2025</p>
+          <p>Samstag</p>
+          <p class="datum">11.10.2025</p>
+        </div>
+        <p><b>Einlass ab 19 Uhr<br>Beginn um 19:30 Uhr</b></p>
+      </div>
+
+      <!-- Wo-Box -->
+      <div class="wobox">
+        <h2>WO</h2>
+        <p> <b>Preysingstraße 85 <br>Jugendkirche “Vom Guten Hirten”</b></p>
+        <p>Da nur begrenzt Parkmöglichkeiten verfügbar sind, bitten wir Sie (wenn möglich) mit den Öffis
+          anzureisen.</p>
+        <div class="anbindungen">
+          <p class="oeffitype">S-& U-Bahn</p>
+          <p>Ostbahnhof</p>
+          <p class="oeffitype">U-Bahn</p>
+          <p>Max-Weber Platz</p>
+          <p class="oeffitype">Tram</p>
+          <p>text</p>
+        </div>
+      </div>
+      <a class="ticketlink2" href="https://pretix.eu/paradise/welcome/" target="_blank" rel="noopener noreferrer"> <b>Hol dir hier dein
+          Ticket für nur 10€!</b></a> <!-- button -->
+    </div>
+
+
+
+  </div>
+  <!-- </div> -->
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+  <div class="index-mobile-1">
+
+    <!-- Pfeil Scroll -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const arrow = document.getElementById("scrollArrow");
+        const section = document.getElementById("section2");
+
+        arrow.addEventListener("click", () => {
+          section.scrollIntoView({ behavior: "smooth" });
+        });
+      });
+    </script>
+
+</body>
+
+</html>

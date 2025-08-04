@@ -1,0 +1,47 @@
+.footer {
+    background-color: rgb(74, 74, 74);
+    color: white;
+    padding: 50px 30px 30px 30px;
+}
+.sponsorenbreit {
+    display: none;
+}
+
+.sponsorenschmaler {
+    display: none;
+}
+@media only screen and (max-width:600px) {
+    .sponsorenschmaler {
+        display: block;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .sponsorenbreit {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        /* align-items: center; */
+    }
+}
+
+.footer2{
+    display: flex;
+    grid-row: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 8vw;
+    margin: 5vw;
+}
+.instalogo{
+    width: min(10vw, 50px);
+}
+
+.link{
+    color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+

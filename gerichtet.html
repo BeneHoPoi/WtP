@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WtP / GERICHTET</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gerichtet.css">
+
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("Navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <div class="gerichtet">
+        <h1>"GERICHTET"</h1>
+        <h3>coming soon</h3>
+        <!-- <h3>Was war "GERICHTET"?</h3>
+        <p>Gerichtet war das Theaterstück, dass - wie auch “WELCOME TO PARADISE” - unter der Regie von Cornelius Heuten
+            im Jahre 2024 aufgeführt wurde. Es handelte von dem Richterbuch und zeigte mit spektakulärem Gesang,
+            Schauspiel und Licht verschiedene Charaktere aus diesem Kapitel der Bibel.</p> -->
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WtP / Das Team</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="team.css">
+
+</head>
+
+<body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("Navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+    <div class="team">
+        <h1>Das Team</h1>
+        <h3>coming soon</h3>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+/* Fonts */
+/* Add font files for Fractul */
+@font-face {
+  font-family: 'Fractul';
+  src: url('fonts/Fractul-ExtraBold.woff2') format('woff2');
+}
+
+h1{
+   font-family: 'Fractul', sans-serif;
+    font-size: 32pt;
+}
+
+
+h2{
+  font-family: 'Fractul', sans-serif;
+  font-size: 32pt;
+}
+
+h3{
+    font-family: 'Fractul', sans-serif;
+    font-size: 24pt;
+}
+
+p, a {
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+b {
+  font-weight: 600;
+}
+
+body {
+  color: white;
+  background-color: #000;
+  /* background-image: url('images/images/verlauf_hintergrund_wtp.png'); */
+  /* background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; */
+  height: 100vh;
+
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.text-black {
+  color: var(--text-black);
+}
+
+.hintergrund{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: -100;
+
+  object-fit:cover;
+  pointer-events: none;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.herocontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 10vh; */
+}
+
+.logo {
+  position: sticky;
+  top: 0;
+  width: min(62vw, 500px);
+  z-index: 10;
+  align-self: center;
+  /* vertikal in der ersten Grid-Zeile */
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.ticketlink1 {
+  width: 195px;
+  height: 27px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 58px;
+  border: 1px solid #000;
+  background: #DAA71A;
+  color: #000;
+  text-decoration: none;
+  font-weight: 300;
+  transition: background 0.3s ease, color 0.2s ease;
+  /* justify-self: center; */
+  /* margin: -0.8; */
+}
+.ticketlink1:hover {
+  background: #c28e10;
+  background-color: #00DEF6;
+  color: white;
+  border: 1px solid white;
+}
+
+.pfeil {
+  position: absolute;
+  bottom: 2rem;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.termine {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+/* CSS Reset */
+
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wannwobox{
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width:725px) {
+ .was{
+  line-height: 100%;
+ }
+ 
+  .wannwobox{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 23px;
+    gap: 30px;
+  }
+  
+  .wannbox {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 23px;
+
+  }
+  .datum{
+    text-align: end;
+  }
+
+  .wobox{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: auto;
+    align-self: flex-end;
+    padding: 23px;
+  }
+
+  .ticketlink2 {
+    align-self: center;
+  }
+}
+
+
+
+@media only screen and (min-width:725px) {
+  /* p{
+    color:#00DEF6;
+  } */
+  
+  .wannwobox{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    row-gap: 5vw;
+    column-gap: 5vw;
+    padding: min(10vw, 200px);
+  }
+
+  .wasbox{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .wannbox{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /* align-self: flex-end; */
+    padding: 23px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 30px;
+  }
+  .wobox{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 30px;
+  }
+  .oeffitype{
+    margin-left:15vw;
+  }
+  .ticketlink2{
+    color: black;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+}
+
+
+.wasbox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  justify-content: flex-start;
+  align-items: center;
+
+  padding: 4.5rem 23px 5rem;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(253, 177, 22, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 144px;
+}
+
+.beschreibung {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 133.00000429153442%;
+  text-decoration: none;
+  text-transform: none;
+  color: black;
+}
+.was{
+  color: #000;
+}
+
+
+.wannbox {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 255, 255, 0.19);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  line-height: 130%;
+}
+
+.wobox {
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  /* margin: 23px; */
+  /* padding: 5vw; */
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  background-color: rgba(255, 255, 255, 0.19);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  line-height: 130%;
+}
+.oeffitype{
+  text-align: left;
+}
+
+.anbindungen {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.wie {
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: var(--font-family-fractul);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 160.7960343360901%;
+  text-decoration: none;
+  text-transform: none;
+  color: var(--text-white);
+}
+
+.ticketlink2 {
+  width: 100%;
+  /* margin: 23px; */
+  box-sizing: border-box;
+  height: 27px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 58px;
+  border: 1px solid #000;
+  background: #DAA71A;
+  color: #000;
+
+  text-decoration: none;
+  font-weight: 300;
+
+  transition: background 0.3s ease, color 0.2s ease;
+}
+.ticketlink2:hover {
+  background: #c28e10;
+  background-color: #00DEF6;
+  color: white;
+  border: 1px solid white;
+}
