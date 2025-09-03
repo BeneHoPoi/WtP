@@ -14,7 +14,7 @@
 <body>
     <div id="navbar-placeholder"></div>
     <script>
-        fetch("navbar.html")
+        fetch("Navbar.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById("navbar-placeholder").innerHTML = data;
@@ -22,10 +22,15 @@
     </script>
     <div class="presse">
         <h1>Presse</h1>
-        <h3>coming soon</h3>
+        <div class="artikel">
+            <h3>Merkur</h3>
+            <div class="artikeldetails">
+            <p><b>"Cornelius Heuten plant neues Multimedia-Projekt: Welcome to Paradise"</b> von Heidi Siefert</p>
+            <a class="presslink" href="youtube.com" target="_blank" rel="noopener noreferrer"><b>Link zu dem Artikel!</b></a>
+        </div>
+        </div>
     </div>
 
 </body>
-
 
 </html>
