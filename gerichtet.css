@@ -3,12 +3,22 @@ h1{
     margin-top: 10vw;
 }
 
-/* *{
-    background-color: #110c19;
-} */
- 
 .gerichtet {
     margin-left: 10vw;
     margin-right: 10vw;
+    margin-top: 130px;
 }
+
+.gerichtetimg{
+    margin-top: 5%;
+    padding-bottom: 5%; 
+    align-self: center;
+}
+
+.gerichtettext{
+    padding: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
 
