@@ -6,6 +6,7 @@ h1{
 .presse {
     margin-left: 10vw;
     margin-right: 10vw;
+    margin-top: 130px;
 }
 
 .artikel {
@@ -39,6 +40,7 @@ h1{
   transition: background 0.3s ease, color 0.2s ease;
   padding-left: 2vw;
   padding-right: 2vw;
+  text-align: center;
 }
 
 .presslink:hover {
