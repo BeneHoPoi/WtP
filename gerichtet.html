@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="gerichtet.css">
 
+    <script src="navbarscript.js"></script>
+
 </head>
 
 <body>
     <div id="navbar-placeholder"></div>
     <script>
-        fetch("navbar.html")
+        fetch("Navbar.html")
             .then(res => res.text())
             .then(data => {
                 document.getElementById("navbar-placeholder").innerHTML = data;
@@ -23,13 +25,27 @@
 
     <div class="gerichtet">
         <h1>"GERICHTET"</h1>
-        <h3>coming soon</h3>
-        <!-- <h3>Was war "GERICHTET"?</h3>
+        <div class="gerichtettext">
+        <h3>Was war "GERICHTET"?</h3>
         <p>Gerichtet war das Theaterstück, dass - wie auch “WELCOME TO PARADISE” - unter der Regie von Cornelius Heuten
             im Jahre 2024 aufgeführt wurde. Es handelte von dem Richterbuch und zeigte mit spektakulärem Gesang,
-            Schauspiel und Licht verschiedene Charaktere aus diesem Kapitel der Bibel.</p> -->
+            Schauspiel und Licht verschiedene Charaktere aus diesem Kapitel der Bibel.</p>
+        <img class="gerichtetimg" src="images/images/240915_LP2_4792.jpg" alt="Bild des Reggiseurs & des Produktionsleiters mit der Medaille">
+        <p>Im September 2025 wurde das Projekt mit der Korbiniansmedaille von Kardinal Reinhold Marx ausgezeichnet.</p>
+        <img class="gerichtetimg" src="images/images/Gerichtet--2.jpg" alt="Impression von dem Theaterstück GERICHTET">
+        <img class="gerichtetimg" src="images/images/Gerichtet-80.jpg" alt="Impression von dem Theaterstück GERICHTET">
+        <img class="gerichtetimg" src="images/images/Gerichtet-85.jpg" alt="Impression von dem Theaterstück GERICHTET">
     </div>
+    </div>
+    <div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+  <div class="index-mobile-1">
 </body>
-
 
 </html>
