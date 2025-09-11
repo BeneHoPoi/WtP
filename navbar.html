@@ -7,60 +7,56 @@
 </head>
 
 <body>
-    <!--<div class="burgermenu">
+    <div class="burgermenu">
         <div class="burgericon">
-            <svg width="44" height="70" viewBox="0 0 44 70" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <foreignObject x="-3.2" y="22.8" width="50.4" height="50.4">
-                    <div xmlns="http://www.w3.org/1999/xhtml"
-                        style="backdrop-filter:blur(1.6px);clip-path:url(#bgblur_0_155_196_clip_path);height:100%;width:100%">
-                    </div>
-                </foreignObject>
-                <circle data-figma-bg-blur-radius="3.2" cx="22" cy="48" r="22" fill="#D9D9D9" fill-opacity="0.2" />
-                <circle cx="22" cy="48" r="21.5" stroke="white" />
-                <path d="M13 42H32" stroke="white" stroke-width="3" stroke-linecap="round" />
-                <path d="M13 54H22.5H32" stroke="white" stroke-width="3" stroke-linecap="round" />
-                <path d="M13 48H32" stroke="white" stroke-width="3" stroke-linecap="round" />
-                <defs>
-                    <clipPath id="bgblur_0_155_196_clip_path" transform="translate(3.2 -22.8)">
-                        <circle cx="22" cy="48" r="22" />
-                    </clipPath>
-                </defs>
-            </svg>
+
+            <a href="javascript:void(0);" class="burgericon" onclick="toggleMenu()">
+                <svg width="44" height="70" viewBox="0 0 44 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <foreignObject x="-3.2" y="22.8" width="50.4" height="50.4">
+                        <div xmlns="http://www.w3.org/1999/xhtml"
+                            style="backdrop-filter:blur(1.6px);clip-path:url(#bgblur_0_155_196_clip_path);height:100%;width:100%">
+                        </div>
+                    </foreignObject>
+                    <circle data-figma-bg-blur-radius="3.2" cx="22" cy="48" r="22" fill="#D9D9D9" fill-opacity="0.2" />
+                    <circle cx="22" cy="48" r="21.5" stroke="white" />
+                    <path d="M13 42H32" stroke="white" stroke-width="3" stroke-linecap="round" />
+                    <path d="M13 54H22.5H32" stroke="white" stroke-width="3" stroke-linecap="round" />
+                    <path d="M13 48H32" stroke="white" stroke-width="3" stroke-linecap="round" />
+                    <defs>
+                        <clipPath id="bgblur_0_155_196_clip_path" transform="translate(3.2 -22.8)">
+                            <circle cx="22" cy="48" r="22" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </a>
         </div>
 
-        <div class="menu">
-            <a href="/index.html"><img class="navlogo" src="images/images/Logo-WtP-weiss.png"
-                    alt="Logo von WELCOME-TO-PARADISE"></a>
+        <div class="menu" id="burgerlinks">
             <a href="/team.html">Das Team</a>
             <a href="/gerichtet.html">"GERICHTET"</a>
             <a href="/presse.html"> Presse</a>
             <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"><b>Unser Instagram</b></a>
         </div>
-    </div>-->
+        
+    </div>
+    
+    <a href="/index.html"><img class="navlogo1" src="images/images/Logo-WtP-weiss.png" alt="Logo von WELCOME-TO-PARADISE"></a>
+    
     <div class="bignavbar">
-        <a href="/index.html"><img class="navlogo" src="images/images/Logo-WtP-weiss.png"
+        <a href="/index.html"><img class="navlogo2" src="images/images/Logo-WtP-weiss.png"
                 alt="Logo von WELCOME-TO-PARADISE"></a>
         <a href="/team.html">Das Team</a>
         <a href="/gerichtet.html">"GERICHTET"</a>
         <a href="/presse.html"> Presse</a>
-        <a href="https://www.instagram.com/welcome_to_paradise25/?hl=de" target="_blank" rel="noopener noreferrer"><b>Unser Instagram</b></a>
+        <a href="https://www.instagram.com/welcome_to_paradise25/?hl=de" target="_blank"
+            rel="noopener noreferrer"><b>Unser Instagram</b></a>
     </div>
-    <script>
-  fetch("Navbar.html")
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById("navbar-placeholder").innerHTML = data;
-
-      const burgerIcon = document.querySelector('.burgericon');
-      const menu = document.querySelector('.menu');
-
-      if (burgerIcon && menu) {
-        burgerIcon.addEventListener('click', () => {
-          menu.classList.toggle('active');
-        });
-      }
-    });
-</script>
+    <!-- <script>
+        function toggleMenu() {
+            var menu = document.getElementById("burgerlinks");
+            menu.classList.toggle("show");
+        }
+    </script> -->
 
 </body>
 
