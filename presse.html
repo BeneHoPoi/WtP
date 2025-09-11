@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="presse.css">
 
+    <script src="navbarscript.js"></script>
+
 </head>
 
 <body>
@@ -26,11 +28,26 @@
             <h3>Merkur</h3>
             <div class="artikeldetails">
             <p><b>"Cornelius Heuten plant neues Multimedia-Projekt: Welcome to Paradise"</b> von Heidi Siefert</p>
-            <a class="presslink" href="youtube.com" target="_blank" rel="noopener noreferrer"><b>Link zu dem Artikel!</b></a>
+            <a class="presslink" href="https://www.merkur.de/lokales/region-holzkirchen/cornelius-heuten-plant-multimedia-projekt-welcome-to-paradise-93906218.html" target="_blank" rel="noopener noreferrer"><b>Link zu dem Artikel!</b></a>
+        </div>
+        </div>
+        <div class="artikel">
+            <h3>Kulturvision aktuell</h3>
+            <div class="artikeldetails">
+            <p><b>"WELCOME TO PARADISE"</b> von Monika Ziegler</p>
+            <a class="presslink" href="https://www.kulturvision-aktuell.de/welcome-to-paradise-cornelius-heuten-jugendkirche-muenchen-2025/" target="_blank" rel="noopener noreferrer"><b>Link zu dem Artikel!</b></a>
         </div>
         </div>
     </div>
-
+<div id="footer-placeholder"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+  <div class="index-mobile-1">
 </body>
 
 </html>
