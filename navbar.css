@@ -17,7 +17,23 @@ li {
         display: none;
     }
 
+    .navlogo1 {
+        /* z-index: 10000;
+        position: sticky;
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+        height: auto;
+        margin-top: 20px; */
+        position: fixed;
+        top: 70px;
+        left: 52%;
 
+        transform: translateX(-50%);
+        width: 40%;
+        height: auto;
+        z-index: 10;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -39,7 +55,7 @@ li {
         text-align: center;
         z-index: 100;
         transition: color 0.2s ease;
-        top:0;
+        top: 0;
     }
 
     .bignavbar a {
@@ -50,15 +66,20 @@ li {
         color: #00DEF6;
     }
 
-    .navlogo {
+    .navlogo2 {
         width: 50%;
+    }
+    .navlogo1 {
+        display: none;
     }
 }
 
 .burgericon {
     position: fixed;
     z-index: 100;
-    margin: 23px;
+    top: 10vw;
+    left: 10vw;
+    /* margin: 23px; */
 }
 
 .menu {
@@ -73,7 +94,7 @@ li {
     z-index: 999;
 }
 
-.menu.active {
+.menu.show {
     display: flex;
 }
 
@@ -81,4 +102,9 @@ li {
     color: white;
     text-decoration: none;
     margin: 0.5em 0;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #00DEF6;
 }
